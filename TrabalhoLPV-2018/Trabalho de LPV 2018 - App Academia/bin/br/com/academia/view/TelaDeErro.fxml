@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="116.0" prefWidth="322.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.academia.controle.TelasMenoresControle">
+   <children>
+      <Text layoutX="77.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Erro na Execução da Operação.">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Text>
+      <ImageView fitHeight="31.0" fitWidth="35.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true">
+         <image>
+            <Image url="@imagens/imagemDeErro.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="246.0" layoutY="77.0" mnemonicParsing="false" onAction="#AcaoBotaoErro" text="OK">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

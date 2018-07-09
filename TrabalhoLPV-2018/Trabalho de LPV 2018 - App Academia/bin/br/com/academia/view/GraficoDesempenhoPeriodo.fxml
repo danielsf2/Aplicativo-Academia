@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="414.0" prefWidth="465.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.academia.controle.GerarGraficoControle">
+   <children>
+      <ImageView fitHeight="414.0" fitWidth="465.0" opacity="0.8" pickOnBounds="true">
+         <image>
+            <Image url="@imagens/imagem4.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="33.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gráfico de Atividade por Período" textAlignment="CENTER" wrappingWidth="400.0">
+         <effect>
+            <DropShadow color="#bf1414" spread="0.33" />
+         </effect>
+         <font>
+            <Font name="Stencil" size="36.0" />
+         </font>
+      </Text>
+      <Label layoutX="17.0" layoutY="142.0" text="Email do Aluno :">
+         <effect>
+            <DropShadow color="#fffafa" spread="0.38" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textoGeraGraficoPeriodo" layoutX="132.0" layoutY="138.0" opacity="0.81" prefHeight="28.0" prefWidth="291.0" promptText="Informe o Email do Aluno que Deseja Pesquisar.">
+         <tooltip>
+            <Tooltip text="Você deve informar o Email do aluno que deseja Pesquisar." />
+         </tooltip>
+      </TextField>
+      <Button layoutX="375.0" layoutY="342.0" mnemonicParsing="false" onAction="#AcaoBotaoGerarGraficoPeriodo" text="Gerar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="19.0" layoutY="252.0" text="Período de Início :">
+         <effect>
+            <DropShadow color="#fffafa" spread="0.38" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="204.0" layoutY="252.0" text="Período de Fim :">
+         <effect>
+            <DropShadow color="#fffafa" spread="0.38" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="InicioPeriodoPesquisa" layoutX="19.0" layoutY="287.0" opacity="0.8" prefHeight="25.0" prefWidth="120.0" promptText="Inicio">
+         <tooltip>
+            <Tooltip text="Aqui Você deve Informar o início do período da Busca" />
+         </tooltip>
+      </DatePicker>
+      <DatePicker fx:id="FimPeriodoPesquisa" layoutX="204.0" layoutY="287.0" opacity="0.8" prefHeight="25.0" prefWidth="108.0" promptText="Fim">
+         <tooltip>
+            <Tooltip text="Aqui Você deve Informar o fim do Período da Busca" />
+         </tooltip>
+      </DatePicker>
+      <Label layoutX="19.0" layoutY="199.0" text="Tipo de Atividade :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" spread="0.31" />
+         </effect>
+      </Label>
+      <TextField fx:id="graficoTipoAtividade" layoutX="146.0" layoutY="195.0" opacity="0.8" prefHeight="25.0" prefWidth="279.0" promptText="Informe o tipo de Atividade" />
+   </children>
+</AnchorPane>

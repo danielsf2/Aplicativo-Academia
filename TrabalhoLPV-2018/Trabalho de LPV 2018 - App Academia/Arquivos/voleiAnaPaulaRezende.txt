@@ -1,0 +1,15 @@
+Exercício: Vôlei
+------ Usuário ------
+Nome: Ana Paula Rezende
+Sexo: Feminino
+Altura: 1,75 m
+Peso: 65,0 Kg
+Data de nascimento: 07/04/1999
+E-mail: ana.rezende@gmail.com
+------ Detalhes do exercício ------
+Data: 30/12/2018
+Tempo: 15:30 - 17:32
+Duração: 02:01:39
+Distância: 6,75 Km
+Calorias perdidas: 375 Kcal
+Passos: 10.200

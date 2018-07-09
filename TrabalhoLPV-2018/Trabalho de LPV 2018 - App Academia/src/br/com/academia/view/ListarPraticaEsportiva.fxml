@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="381.0" prefWidth="1156.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.academia.controle.ListarPraticaEsportivaControle">
+   <children>
+      <ImageView fitHeight="381.0" fitWidth="1163.0" pickOnBounds="true">
+         <image>
+            <Image url="@imagens/imagem6.jpg" />
+         </image>
+      </ImageView>
+      <Pagination fx:id="alunoPaginacao" layoutX="34.0" layoutY="35.0" prefHeight="344.0" prefWidth="1091.0" />
+      <TableView fx:id="tabelaExercicioAerobico" editable="true" layoutX="34.0" layoutY="40.0" opacity="0.8" prefHeight="298.0" prefWidth="1091.0">
+        <columns>
+          <TableColumn fx:id="colunaTipoExercicio" prefWidth="113.0" text="Esporte" />
+          <TableColumn fx:id="colunaData" prefWidth="83.0" text="Data" />
+            <TableColumn fx:id="colunaDuracao" prefWidth="94.0" text="Duração" />
+            <TableColumn fx:id="colunaDistancia" prefWidth="77.0" text="Distância" />
+            <TableColumn fx:id="colunaCaloriasPerdidas" prefWidth="130.0" text="Calorias Perdidas" />
+            <TableColumn fx:id="colunaPassos" minWidth="0.0" prefWidth="76.0" text="Passos" />
+            <TableColumn fx:id="colunaTempo" prefWidth="116.0" text="Tempo" />
+            <TableColumn fx:id="colunaIdExercicio" prefWidth="199.0" text="Id do Exercício" />
+            <TableColumn fx:id="colunaEmail" prefWidth="205.0" text="Email Aluno" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

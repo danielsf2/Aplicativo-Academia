@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="330.0" prefWidth="732.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.academia.controle.ListaAlunoNomeControler">
+   <children>
+      <ImageView fitHeight="330.0" fitWidth="732.0" pickOnBounds="true">
+         <image>
+            <Image url="@imagens/imagem4.jpg" />
+         </image>
+      </ImageView>
+      <Pagination fx:id="alunoPaginacao" layoutX="34.0" layoutY="41.0" prefHeight="289.0" prefWidth="676.0" />
+      <TableView fx:id="tabelaAlunos" editable="true" layoutX="34.0" layoutY="40.0" opacity="0.8" prefHeight="250.0" prefWidth="676.0">
+        <columns>
+          <TableColumn fx:id="colunaNome" prefWidth="132.0" text="Nome" />
+          <TableColumn fx:id="colunaSexo" prefWidth="76.0" text="Sexo" />
+            <TableColumn fx:id="colunaAltura" prefWidth="65.0" text="Altura" />
+            <TableColumn fx:id="colunaPeso" prefWidth="63.0" text="Peso" />
+            <TableColumn fx:id="colunaDataNacimento" prefWidth="133.0" text="Data de Nascimento" />
+            <TableColumn fx:id="colunaEmail" prefWidth="147.0" text="Email" />
+            <TableColumn fx:id="colunaId" prefWidth="59.0" text="Id" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

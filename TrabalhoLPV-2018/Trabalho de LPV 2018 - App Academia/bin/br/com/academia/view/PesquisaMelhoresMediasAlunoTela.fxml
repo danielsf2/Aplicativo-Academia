@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="474.0" prefWidth="781.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.academia.controle.PesquisaMelhoresMediasAlunoTelaControle">
+   <children>
+      <ImageView fitHeight="474.0" fitWidth="781.0" pickOnBounds="true">
+         <image>
+            <Image url="@imagens/imagem6.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="70.0" layoutY="52.0" prefHeight="346.0" prefWidth="653.0">
+         <children>
+            <ImageView fitHeight="346.0" fitWidth="653.0" opacity="0.8" pickOnBounds="true">
+               <image>
+                  <Image url="@imagens/imagem9.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="47.0" layoutY="119.0" text="Maior Duração de Exercício :" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow spread="0.31" />
+               </effect>
+            </Label>
+            <Label layoutX="47.0" layoutY="164.0" text="Maior Distância Percorrida :" textFill="WHITE">
+               <effect>
+                  <DropShadow spread="0.31" />
+               </effect>
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="205.0" text="Maior Número de Calorias Perdidas :" textFill="WHITE">
+               <effect>
+                  <DropShadow spread="0.31" />
+               </effect>
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="249.0" text="Maior Número de Passos Dados :" textFill="WHITE">
+               <effect>
+                  <DropShadow spread="0.31" />
+               </effect>
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="290.0" text="Maior Velocidade Atingida :" textFill="WHITE">
+               <effect>
+                  <DropShadow spread="0.31" />
+               </effect>
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="457.0" layoutY="119.0" text="Data :" textFill="WHITE">
+               <effect>
+                  <DropShadow spread="0.31" />
+               </effect>
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="457.0" layoutY="205.0" text="Data :" textFill="WHITE">
+               <effect>
+                  <DropShadow spread="0.31" />
+               </effect>
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="457.0" layoutY="249.0" text="Data :" textFill="WHITE">
+               <effect>
+                  <DropShadow spread="0.31" />
+               </effect>
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="457.0" layoutY="290.0" text="Data :" textFill="WHITE">
+               <effect>
+                  <DropShadow spread="0.31" />
+               </effect>
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+            </Label>
+            <Text fx:id="maiorDuracao" fill="WHITE" layoutX="275.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Lucida Bright Demibold" size="14.0" />
+               </font></Text>
+            <Text fx:id="dataMaiorDuracao" fill="WHITE" layoutX="516.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Lucida Bright Demibold" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="dataMaiorCaloria" fill="WHITE" layoutX="516.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Lucida Bright Demibold" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="dataMaiorPassos" fill="WHITE" layoutX="516.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Lucida Bright Demibold" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="dataMaiorVelocidade" fill="WHITE" layoutX="516.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Lucida Bright Demibold" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="maiorCalorias" fill="WHITE" layoutX="343.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Lucida Bright Demibold" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="maiorVelocidade" fill="WHITE" layoutX="275.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Lucida Bright Demibold" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="maiorDistancia" fill="WHITE" layoutX="275.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Lucida Bright Demibold" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="maiorPassos" fill="WHITE" layoutX="311.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Lucida Bright Demibold" size="14.0" />
+               </font>
+            </Text>
+            <Label layoutX="457.0" layoutY="164.0" text="Data :" textFill="WHITE">
+               <effect>
+                  <DropShadow spread="0.31" />
+               </effect>
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+            </Label>
+            <Text fx:id="dataMaiorDistancia" fill="WHITE" layoutX="516.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Lucida Bright Demibold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="76.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Melhores médias do aluno">
+               <font>
+                  <Font name="Stencil" size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

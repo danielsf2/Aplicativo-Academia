@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="168.0" prefWidth="425.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.academia.controle.InserirArquivoControle">
+   <children>
+      <ImageView fitHeight="168.0" fitWidth="425.0" pickOnBounds="true">
+         <image>
+            <Image url="@imagens/imagem4.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="nomeArquivo" focusTraversable="false" layoutX="26.0" layoutY="62.0" opacity="0.9" prefHeight="32.0" prefWidth="376.0" promptText="Informe o caminho do Arquivo e clique em &quot;Inserir&quot;.">
+         <tooltip>
+            <Tooltip text="Você deve Informar o Caminho do Arquivo Seguido da Extensão do Arquivo por Exemplo &quot;Arquivo.txt&quot;" />
+         </tooltip>
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <Button fx:id="botaoInserirArquivo" layoutX="350.0" layoutY="109.0" mnemonicParsing="false" onAction="#AcaoBotaoInserirArquivo" prefHeight="32.0" prefWidth="52.0" text="Inserir">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="26.0" layoutY="25.0" text="Inserir Arquivo :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow color="#fcf6f6" spread="0.62" />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

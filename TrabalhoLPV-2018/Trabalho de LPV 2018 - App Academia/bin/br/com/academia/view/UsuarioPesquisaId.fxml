@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="239.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.academia.controle.UsuariosControle">
+   <children>
+      <ImageView fitHeight="239.0" fitWidth="412.0" opacity="0.8" pickOnBounds="true">
+         <image>
+            <Image url="@imagens/imagem8.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="28.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pesquisar Usuário" textAlignment="CENTER">
+         <font>
+            <Font name="Stencil" size="36.0" />
+         </font>
+         <effect>
+            <DropShadow color="#bf1414" spread="0.33" />
+         </effect>
+      </Text>
+      <Label layoutX="40.0" layoutY="85.0" text="Pesquisar Usuário :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow color="#fffafa" spread="0.38" />
+         </effect>
+      </Label>
+      <TextField fx:id="textoPesquisarUsuario" layoutX="40.0" layoutY="120.0" opacity="0.81" prefHeight="28.0" prefWidth="347.0" promptText="Informe o Identificador do Usuário que Deseja Pesquisar.">
+         <tooltip>
+            <Tooltip text="Você deve informar o Identificador do Usuário que deseja Pesquisar." />
+         </tooltip>
+      </TextField>
+      <Button layoutX="317.0" layoutY="168.0" mnemonicParsing="false" onAction="#AcaoBotaoPesquisarUsuario" text="Pesquisar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

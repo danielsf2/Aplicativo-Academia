@@ -1,0 +1,15 @@
+Exercício: Musculação
+------ Usuário ------
+Nome: Bruno Silva
+Sexo: masculino
+Altura: 1,70 m
+Peso: 76,0 Kg
+Data de nascimento: 22/04/1980
+E-mail: bruno.silva22@gmail.com
+------ Detalhes do exercício ------
+Data: 30/05/2018
+Tempo: 13:30 - 14:32
+Duração: 01:02:00
+Distância: 6,75 Km
+Calorias perdidas: 375 Kcal
+Passos: 2.400

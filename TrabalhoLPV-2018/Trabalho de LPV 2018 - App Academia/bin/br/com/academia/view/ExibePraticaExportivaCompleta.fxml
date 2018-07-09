@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="473.0" prefWidth="664.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.academia.controle.ExibePraticaExportivaCompleta">
+   <children>
+      <ImageView fitHeight="474.0" fitWidth="664.0" pickOnBounds="true">
+         <image>
+            <Image url="@imagens/imagem6.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="140.0" layoutY="80.0" prefHeight="303.0" prefWidth="384.0">
+         <children>
+            <ImageView fitHeight="303.0" fitWidth="384.0" opacity="0.8" pickOnBounds="true">
+               <image>
+                  <Image url="@imagens/imagem9.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="16.0" layoutY="15.0" text="Tipo de Exercício :" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow spread="0.31" />
+               </effect>
+            </Label>
+            <Label layoutX="16.0" layoutY="41.0" text="Data :" textFill="WHITE">
+               <effect>
+                  <DropShadow spread="0.31" />
+               </effect>
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="70.0" text="Duração :" textFill="WHITE">
+               <effect>
+                  <DropShadow spread="0.31" />
+               </effect>
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="95.0" text="Distância :" textFill="WHITE">
+               <effect>
+                  <DropShadow spread="0.31" />
+               </effect>
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="128.0" text="Calorias Perdidas :" textFill="WHITE">
+               <effect>
+                  <DropShadow spread="0.31" />
+               </effect>
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="158.0" text="Passos :" textFill="WHITE">
+               <effect>
+                  <DropShadow spread="0.31" />
+               </effect>
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="191.0" text="Tempo :" textFill="WHITE">
+               <effect>
+                  <DropShadow spread="0.31" />
+               </effect>
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="222.0" text="Identificador :" textFill="WHITE">
+               <effect>
+                  <DropShadow spread="0.31" />
+               </effect>
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="252.0" text="Email Aluno :" textFill="WHITE">
+               <effect>
+                  <DropShadow spread="0.31" />
+               </effect>
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+            </Label>
+            <Text fx:id="tipoExercicio" fill="WHITE" layoutX="167.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Lucida Bright Demibold" size="14.0" />
+               </font></Text>
+            <Text fx:id="passosExercicio" fill="WHITE" layoutX="83.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Lucida Bright Demibold" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="tempoExercicio" fill="WHITE" layoutX="83.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Lucida Bright Demibold" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="identificadorExercicio" fill="WHITE" layoutX="135.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Lucida Bright Demibold" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="emailAlunoExercicio" fill="WHITE" layoutX="126.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Lucida Bright Demibold" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="distanciaExercicio" fill="WHITE" layoutX="110.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Lucida Bright Demibold" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="duracaoExercicio" fill="WHITE" layoutX="99.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Lucida Bright Demibold" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="dataExercicio" fill="WHITE" layoutX="72.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Lucida Bright Demibold" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="caloriasPerdidasExercicio" fill="WHITE" layoutX="167.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Lucida Bright Demibold" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

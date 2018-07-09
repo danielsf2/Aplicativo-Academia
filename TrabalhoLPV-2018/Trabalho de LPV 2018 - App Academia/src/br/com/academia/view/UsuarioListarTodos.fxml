@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="330.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.academia.controle.UsuarioListarTodosControle">
+   <children>
+      <ImageView fitHeight="330.0" fitWidth="573.0" pickOnBounds="true">
+         <image>
+            <Image url="@imagens/imagem6.jpg" />
+         </image>
+      </ImageView>
+      <Pagination fx:id="usuarioPaginacao" layoutX="34.0" layoutY="35.0" prefHeight="295.0" prefWidth="506.0" />
+      <TableView fx:id="tabelaUsuarios" editable="true" layoutX="34.0" layoutY="40.0" opacity="0.8" prefHeight="250.0" prefWidth="506.0">
+        <columns>
+          <TableColumn fx:id="colunaIdentificador" prefWidth="97.0" text="Identificador" />
+          <TableColumn fx:id="colunaNomeUsuario" prefWidth="181.0" text="Nome de Usuário" />
+            <TableColumn fx:id="colunaSenha" prefWidth="115.0" text="Senha" />
+            <TableColumn fx:id="colunaPapel" prefWidth="112.0" text="Papel" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="395.0" prefWidth="384.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.academia.controle.UsuariosControle">
+   <children>
+      <ImageView fitHeight="398.0" fitWidth="384.0" opacity="0.84" pickOnBounds="true">
+         <image>
+            <Image url="@imagens/imagem8.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="42.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastrar Usuário" textAlignment="CENTER" wrappingWidth="300.0">
+         <font>
+            <Font name="Stencil" size="36.0" />
+         </font>
+         <effect>
+            <DropShadow color="#ab1111" spread="0.4" />
+         </effect>
+      </Text>
+      <Label layoutX="39.0" layoutY="174.0" text="Nome :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+      </Label>
+      <Label layoutX="42.0" layoutY="215.0" text="Senha :">
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="262.0" text="Papel :">
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="identificadorUsuario" editable="false" focusTraversable="false" layoutX="140.0" layoutY="131.0" opacity="0.8" prefHeight="25.0" prefWidth="209.0" promptText="Informe um Id para o Usuário." text="Campo Gerado Automaticamente.">
+         <tooltip>
+            <Tooltip text="Aqui você deve informar o Identificador do Aluno que Deseja Alterar." />
+         </tooltip>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Label layoutX="41.0" layoutY="134.0" text="Identificador :">
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nomeUsuario" layoutX="95.0" layoutY="171.0" opacity="0.8" prefHeight="25.0" prefWidth="252.0" promptText="Informe um nome de Usuário." />
+      <TextField fx:id="senhaUsuario" layoutX="97.0" layoutY="212.0" opacity="0.8" prefHeight="25.0" prefWidth="252.0" promptText="Informe uma senha de Usuário." />
+      <TextField fx:id="papelUsuario" layoutX="95.0" layoutY="259.0" opacity="0.8" prefHeight="25.0" prefWidth="252.0" promptText="Informe o papel do Usuário." />
+      <Button layoutX="143.0" layoutY="335.0" mnemonicParsing="false" onAction="#AcaoBotaoCadastrar" prefHeight="25.0" prefWidth="99.0" text="Cadastrar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

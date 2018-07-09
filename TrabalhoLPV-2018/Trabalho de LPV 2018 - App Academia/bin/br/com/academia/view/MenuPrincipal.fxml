@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="546.0" prefWidth="529.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.academia.controle.MenuPrincipalControle">
+   <children>
+      <ImageView fitHeight="546.0" fitWidth="529.0" pickOnBounds="true">
+         <image>
+            <Image url="@imagens/imagem3.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="14.0" layoutY="144.0" opacity="0.9" prefHeight="364.0" prefWidth="218.0">
+         <children>
+            <SplitMenuButton fx:id="botaoUsuarios" layoutX="14.0" layoutY="263.0" mnemonicParsing="false" popupSide="RIGHT" prefHeight="37.0" prefWidth="180.0" text="Usuários" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <items>
+                  <RadioMenuItem mnemonicParsing="false" onAction="#AcaoBotaoCadastrarUsuario" text="Cadastrar um Usuário">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="menu" />
+                     </toggleGroup></RadioMenuItem>
+                  <RadioMenuItem mnemonicParsing="false" onAction="#AcaoBotaoPesquisarUsuario" text="Pesquisar um Usuário" toggleGroup="$menu" />
+                  <RadioMenuItem mnemonicParsing="false" onAction="#AcaoBotaoEditarUsuario" text="Editar dados de um Usuário" toggleGroup="$menu" />
+                  <RadioMenuItem mnemonicParsing="false" onAction="#AcaoBotaoRemoverUsuario" text="Remover um Usuário" toggleGroup="$menu" />
+                  <RadioMenuItem mnemonicParsing="false" onAction="#AcaoBotaoListarUsuarios" text="Listar todos os Usuários" toggleGroup="$menu" />
+               </items>
+               <effect>
+                  <DropShadow spread="0.3" />
+               </effect>
+            </SplitMenuButton>
+            <SplitMenuButton fx:id="menuPraticasEsportivas" layoutX="14.0" layoutY="215.0" mnemonicParsing="false" popupSide="RIGHT" prefHeight="37.0" prefWidth="180.0" text="Práticas Esportivas" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <items>
+                  <RadioMenuItem mnemonicParsing="false" onAction="#AcaoBotaoRemoverEsporte" text="Remover um Esporte" toggleGroup="$menu" />
+                  <RadioMenuItem mnemonicParsing="false" onAction="#AcaoBotaoEditarEsporte" text="Editar um Esporte" toggleGroup="$menu" />
+                  <RadioMenuItem mnemonicParsing="false" onAction="#AcaoBotaoListarTodosEsportes" text="Listar Todos os Esportes" toggleGroup="$menu" />
+               </items>
+               <effect>
+                  <DropShadow spread="0.3" />
+               </effect>
+            </SplitMenuButton>
+            <SplitMenuButton fx:id="botaoExercicioAerobico" layoutX="14.0" layoutY="168.0" mnemonicParsing="false" popupSide="RIGHT" prefHeight="37.0" prefWidth="180.0" text="Exercícios Aeróbicos" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <items>
+                  <RadioMenuItem mnemonicParsing="false" onAction="#AcaoBotaoRemoverExercicio" text="Remover Exercício" toggleGroup="$menu" />
+                  <RadioMenuItem mnemonicParsing="false" onAction="#AcaoBotaoEditarExercicio" text="Editar Exercício" toggleGroup="$menu" />
+                  <RadioMenuItem mnemonicParsing="false" onAction="#AcaoBotaoListarTodosExercicios" text="Listar Todos os Exercícios" toggleGroup="$menu" />
+               </items>
+               <effect>
+                  <DropShadow spread="0.3" />
+               </effect>
+            </SplitMenuButton>
+            <SplitMenuButton fx:id="acaoAlunos" layoutX="14.0" layoutY="120.0" mnemonicParsing="false" popupSide="RIGHT" prefHeight="37.0" prefWidth="180.0" text="Alunos" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <items>
+                  <RadioMenuItem mnemonicParsing="false" onAction="#AcaoBotaoEditarDadosAluno" text="Editar dados do Aluno" toggleGroup="$menu" />
+                  <RadioMenuItem mnemonicParsing="false" onAction="#AcaoBotaoRemoverAluno" text="Remover Aluno" toggleGroup="$menu" />
+                  <RadioMenuItem mnemonicParsing="false" onAction="#AcaoBotaoListarTodosAlunos" text="Listar todos os Alunos" toggleGroup="$menu" />
+               </items>
+               <effect>
+                  <DropShadow spread="0.3" />
+               </effect>
+            </SplitMenuButton>
+            <SplitMenuButton fx:id="botaoPesquisaAluno" layoutX="14.0" layoutY="67.0" mnemonicParsing="false" popupSide="RIGHT" prefHeight="37.0" prefWidth="180.0" text="Pesquisa Específica" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <items>
+                  <RadioMenuItem mnemonicParsing="false" onAction="#acaoBotaoPesquisaAlunoPorNome" text="Pesquisa Aluno por Nome" toggleGroup="$menu" />
+                  <RadioMenuItem mnemonicParsing="false" onAction="#AcaoBotaoPesquisaAtividadesPorPeriodo" text="Pesquisa Atividades do Aluno por Período" toggleGroup="$menu" />
+                  <RadioMenuItem mnemonicParsing="false" onAction="#AcaoBotaoPesquisaAtividadePorPeriodoDeTempo" text="Pesquisa Atividade por Período de Tempo" toggleGroup="$menu" />
+                  <RadioMenuItem mnemonicParsing="false" onAction="#AcaoBotaoPesquisaMelhoresMediasDoAluno" text="Pesquisa Melhores Médias do Aluno" />
+               </items>
+               <effect>
+                  <DropShadow spread="0.3" />
+               </effect>
+            </SplitMenuButton>
+            <SplitMenuButton fx:id="botaoCadastrarArquivo" depthTest="DISABLE" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" popupSide="RIGHT" prefHeight="37.0" prefWidth="180.0" text="Cadastra Arquivo" wrapText="true">
+              <items>
+                  <RadioMenuItem mnemonicParsing="false" onAction="#AcaoBotaoInserirArquivo" text="Inserir Arquivo" toggleGroup="$menu" />
+              </items>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <effect>
+                  <DropShadow spread="0.29" />
+               </effect>
+            </SplitMenuButton>
+            <SplitMenuButton fx:id="botaoUsuarios1" layoutX="14.0" layoutY="313.0" mnemonicParsing="false" popupSide="RIGHT" prefHeight="37.0" prefWidth="180.0" text="Exibição de Gráficos" wrapText="true">
+               <effect>
+                  <DropShadow spread="0.3" />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <items>
+                  <RadioMenuItem mnemonicParsing="false" onAction="#AcaoBotaoGraficoDeDesempenhoDoAluno" text="Desempenho do Aluno por Período">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="menu1" />
+                     </toggleGroup>
+                  </RadioMenuItem>
+                  <RadioMenuItem mnemonicParsing="false" onAction="#AcaoBotaoGraficoDeComparacaoDeAlunos" text="Comparação de Desempenho de Alunos por Atividade" toggleGroup="$menu1" />
+                  <RadioMenuItem mnemonicParsing="false" onAction="#AcaoBotaoGraficoTotalDeValoresObtidos" text="Total de Valores Obtidos nos Exercicios" toggleGroup="$menu1" />
+               </items>
+            </SplitMenuButton>
+         </children>
+      </Pane>
+      <Button fx:id="botaoSair" layoutX="440.0" layoutY="488.0" mnemonicParsing="false" onAction="#AcaoBotaoSair" prefHeight="30.0" prefWidth="50.0" text="Sair">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.3" />
+         </effect>
+      </Button>
+      <Text layoutX="87.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Main Physical" textAlignment="CENTER">
+         <font>
+            <Font name="Stencil" size="48.0" />
+         </font>
+         <effect>
+            <DropShadow color="#cd1a0d" spread="0.3" />
+         </effect>
+      </Text>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

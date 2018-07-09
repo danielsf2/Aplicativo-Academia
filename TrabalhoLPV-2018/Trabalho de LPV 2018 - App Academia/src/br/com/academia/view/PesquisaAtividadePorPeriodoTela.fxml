@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="516.0" prefWidth="1311.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.academia.controle.TelaPesquisaPorPeriodoControle">
+   <children>
+      <ImageView fitHeight="516.0" fitWidth="1311.0" pickOnBounds="true">
+         <image>
+            <Image url="@imagens/imagem6.jpg" />
+         </image>
+      </ImageView>
+      <Pagination fx:id="alunoPaginacao" layoutX="34.0" layoutY="41.0" prefHeight="473.0" prefWidth="1245.0" />
+      <TableView fx:id="tabelaExercicioAerobico" editable="true" layoutX="34.0" layoutY="40.0" onMouseClicked="#tabelaExercicioAerobicoClicar" onTouchPressed="#tabelaExercicioAerobicoClicar" opacity="0.8" prefHeight="191.0" prefWidth="1245.0">
+        <columns>
+          <TableColumn fx:id="EAcolunaTipoExercicio" prefWidth="102.0" text="Tipo de Exercício" />
+          <TableColumn fx:id="EAcolunaData" prefWidth="68.0" text="Data" />
+            <TableColumn fx:id="EAcolunaDuracao" prefWidth="52.0" text="Duração" />
+            <TableColumn fx:id="EAcolunaDistancia" prefWidth="56.0" text="Distância" />
+            <TableColumn fx:id="EAcolunaCaloriasPerdidas" prefWidth="81.0" text="Kcal Perdidas" />
+            <TableColumn fx:id="EAcolunaPassos" prefWidth="44.0" text="Passos" />
+            <TableColumn fx:id="EAcolunaVelocidadeMedia" prefWidth="63.0" text="Vel. Med. " />
+            <TableColumn fx:id="EAcolunaVelocidadeMaxima" prefWidth="58.0" text="Vel. Max." />
+            <TableColumn fx:id="EAcolunaRitmoMedio" prefWidth="81.0" text="Ritmo Médio" />
+            <TableColumn fx:id="EAcolunaRitmoMaximo" prefWidth="69.0" text="Ritmo Max" />
+            <TableColumn fx:id="EAcolunaMenorElevacao" prefWidth="53.0" text="Elev Min" />
+            <TableColumn fx:id="EAcolunaMaiorElevacao" prefWidth="56.0" text="Elev Max" />
+            <TableColumn fx:id="EAcolunaTempo" prefWidth="101.0" text="Tempo" />
+            <TableColumn fx:id="EAcolunaIdExercicio" prefWidth="145.0" text="Id do Exercício" />
+            <TableColumn fx:id="EAcolunaEmail" prefWidth="123.0" text="Email Aluno" />
+            <TableColumn fx:id="EAColunaIdControle" prefWidth="92.0" text="Id de Controle" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tabelaPraticaEsportiva" editable="true" layoutX="110.0" layoutY="258.0" opacity="0.8" prefHeight="191.0" prefWidth="1091.0">
+         <columns>
+            <TableColumn fx:id="PAcolunaTipoExercicio" prefWidth="113.0" text="Esporte" />
+            <TableColumn fx:id="PAcolunaData" prefWidth="83.0" text="Data" />
+            <TableColumn fx:id="PAcolunaDuracao" prefWidth="94.0" text="Duração" />
+            <TableColumn fx:id="PAcolunaDistancia" prefWidth="77.0" text="Distância" />
+            <TableColumn fx:id="PAcolunaCaloriasPerdidas" prefWidth="130.0" text="Calorias Perdidas" />
+            <TableColumn fx:id="PAcolunaPassos" minWidth="0.0" prefWidth="76.0" text="Passos" />
+            <TableColumn fx:id="PAcolunaTempo" prefWidth="116.0" text="Tempo" />
+            <TableColumn fx:id="PAcolunaIdExercicio" prefWidth="199.0" text="Id do Exercício" />
+            <TableColumn fx:id="PAcolunaEmail" prefWidth="205.0" text="Email Aluno" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

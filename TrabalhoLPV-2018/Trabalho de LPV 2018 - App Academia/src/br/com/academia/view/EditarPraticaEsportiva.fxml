@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="514.0" prefWidth="447.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.academia.controle.EditarExercicioAerobicoControle">
+   <children>
+      <ImageView fitHeight="514.0" fitWidth="447.0" opacity="0.84" pickOnBounds="true">
+         <image>
+            <Image url="@imagens/imagem4.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="42.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alterar Dados Prática esportiva" textAlignment="CENTER" wrappingWidth="380.0">
+         <font>
+            <Font name="Stencil" size="36.0" />
+         </font>
+         <effect>
+            <DropShadow color="#ab1111" spread="0.4" />
+         </effect>
+      </Text>
+      <Label layoutX="39.0" layoutY="147.0" text="Tipo de Exercicio :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+      </Label>
+      <Label layoutX="38.0" layoutY="183.0" text="Data :">
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="215.0" text="Duração :">
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="247.0" text="Distância :">
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="279.0" text="Calorias Perdidas :">
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="316.0" text="Email :">
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="alterarIdentificadorExercicio" layoutX="137.0" layoutY="110.0" opacity="0.8" prefHeight="25.0" prefWidth="274.0" promptText="Informe o id do Exercicio que deseja alterar.">
+         <tooltip>
+            <Tooltip text="Aqui você deve informar o Identificador da Pratica Esportiva que Deseja Alterar." />
+         </tooltip>
+      </TextField>
+      <Label layoutX="41.0" layoutY="112.0" text="Identificador :">
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="alterarNomeExercicio" layoutX="159.0" layoutY="145.0" opacity="0.8" prefHeight="25.0" prefWidth="252.0" promptText="Informe o novo Nome do Exercício" />
+      <TextField fx:id="alterarData" layoutX="82.0" layoutY="181.0" opacity="0.8" prefHeight="25.0" prefWidth="329.0" promptText="Informe a nova Data" />
+      <TextField fx:id="alterarDuracao" layoutX="112.0" layoutY="213.0" opacity="0.8" prefHeight="25.0" prefWidth="302.0" promptText="Informe a nova Duração." />
+      <TextField fx:id="alterarDistancia" layoutX="115.0" layoutY="245.0" prefHeight="25.0" prefWidth="296.0" promptText="Informe a nova Distância." />
+      <TextField fx:id="alterarCaloriasPerdidas" layoutX="159.0" layoutY="277.0" prefHeight="25.0" prefWidth="252.0" promptText="Nova quantidade de calorias perdidas.">
+         <tooltip>
+            <Tooltip text="Você deve informar a nova data no formato DD/MM/AAAA" />
+         </tooltip>
+      </TextField>
+      <TextField fx:id="alterarEmail" layoutX="91.0" layoutY="314.0" opacity="0.8" prefHeight="25.0" prefWidth="320.0" promptText="Informe o novo Email" />
+      <Button layoutX="184.0" layoutY="451.0" mnemonicParsing="false" onAction="#AcaoBotaoAlterar" prefHeight="25.0" prefWidth="79.0" text="Alterar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="38.0" layoutY="356.0" text="Passos :">
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="387.0" text="Tempo :">
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="alterarPassos" layoutX="91.0" layoutY="354.0" prefHeight="25.0" prefWidth="320.0" promptText="Nova quantidade de Passos." />
+      <TextField fx:id="alterarTempo" layoutX="91.0" layoutY="385.0" prefHeight="25.0" prefWidth="320.0" promptText="Informe o novo Tempo.">
+         <tooltip>
+            <Tooltip text="Você deve informar o novo Tempo no formato DD/MM/AAAA" />
+         </tooltip>
+      </TextField>
+   </children>
+</AnchorPane>

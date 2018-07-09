@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="861.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.academia.controle.GeraGraficoPeriodoControle">
+   <children>
+      <ImageView fitHeight="526.0" fitWidth="868.0" layoutX="-1.0" layoutY="-5.0" pickOnBounds="true">
+         <image>
+            <Image url="@imagens/imagem10.jpg" />
+         </image>
+      </ImageView>
+      <BarChart fx:id="Grafico" layoutX="32.0" layoutY="14.0" opacity="0.7" prefHeight="482.0" prefWidth="811.0" title="Dados Obtido pelo Aluno no Período">
+        <xAxis>
+          <CategoryAxis fx:id="larguraGrafico" side="BOTTOM">
+               <effect>
+                  <DropShadow spread="0.31" />
+               </effect></CategoryAxis>
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="alturaGrafico" prefHeight="468.0" prefWidth="1.0" side="LEFT">
+               <effect>
+                  <DropShadow color="#070707" spread="0.33" />
+               </effect></NumberAxis>
+        </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>

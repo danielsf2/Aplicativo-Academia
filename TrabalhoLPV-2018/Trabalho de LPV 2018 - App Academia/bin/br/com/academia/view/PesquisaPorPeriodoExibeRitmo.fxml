@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="405.0" prefWidth="387.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.academia.controle.TelaPesquisaPeriodoRitmo">
+   <children>
+      <ImageView fitHeight="405.0" fitWidth="387.0" pickOnBounds="true">
+         <image>
+            <Image url="@imagens/imagem6.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tabelaRitmo" layoutX="39.0" layoutY="31.0" opacity="0.8" prefHeight="344.0" prefWidth="306.0">
+        <columns>
+          <TableColumn fx:id="RTkm" prefWidth="92.0" text="Km" />
+          <TableColumn fx:id="RTritmo" prefWidth="198.0" text="Ritmo" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

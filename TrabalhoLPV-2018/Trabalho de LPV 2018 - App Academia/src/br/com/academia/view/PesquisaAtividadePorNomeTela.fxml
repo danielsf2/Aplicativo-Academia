@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="385.0" prefWidth="492.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.com.academia.controle.TelaAtividadesControler">
+   <children>
+      <ImageView fitHeight="393.0" fitWidth="498.0" layoutX="-2.0" layoutY="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@imagens/imagem6.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="fxTabela" layoutX="68.0" layoutY="37.0" onMouseClicked="#clicarAtividadeTabela" onTouchPressed="#clicarAtividadeTabela" opacity="0.81" prefHeight="325.0" prefWidth="365.0">
+        <columns>
+          <TableColumn fx:id="fxTipoAtividade" prefWidth="129.0" text="Tipo da Atividade" />
+          <TableColumn fx:id="fxData" prefWidth="98.0" text="Data" />
+            <TableColumn fx:id="fxIdentificador" prefWidth="137.0" text="Identificador" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
